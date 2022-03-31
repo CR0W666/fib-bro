@@ -29,10 +29,11 @@ class Fib {
 
     public static void printSeq(int[] seq) {
         System.out.println("elements: " + Arrays.toString(seq));
-        System.out.println("0\n1");
-        for (int i = 2; i < seq.length; i++) {
+        for (int i = seq.length-1; i > 1; i--) {
             System.out.println(seq[i] + " = " + seq[i - 1] + " + " + seq[i - 2]); 
         }
+        System.out.println("1\n0");
+
     }
 }
 
